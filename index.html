@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+      <link rel="stylesheet" href="css/index.css">  
     <link rel="stylesheet" href="css/flickity-docs.css" media="screen">
       
-    <link rel="stylesheet" href="css/index.css">  
+    
       
       
   </head>
   <body>
       
       <div id="cheese">
-          <img src="cheese.jpg"> 
-          <p>TESTING</p>
+          <img src="cheese2.jpg"> 
+          <p>Pour Madame Holden Avard</p>
+          <section class="main">
+              <a class="arrow-wrap" href="#content">
+                <span class="arrow"></span>
+              </a>
+          </section>
       </div>
       
-      <div class="hero-carousel js-flickity" data-js-module="hero-carousel">
-    <div class="hero-carousel__cell hero-carousel__cell--1">
-      <div class="hero-carousel__cell__content">
-        <h1>Flickity</h1>
-        <p class="tagline">Touch, responsive, flickable&nbsp;carousels</p>
-      </div>
-    </div>
+      
+      <div id="content" class="hero-carousel js-flickity" data-js-module="hero-carousel">
+        <div class="hero-carousel__cell hero-carousel__cell--1">
+          <div class="hero-carousel__cell__content">
+            <h1>Flickity</h1>
+            <p class="tagline">Touch, responsive, flickable&nbsp;carousels</p>
+          </div>
+        </div>
     <div class="hero-carousel__cell hero-carousel__cell--2">
       <div class="hero-carousel__cell__content">
         <p class="slogan slogan--easy">Easy to use.</p>
@@ -50,12 +57,37 @@
         <p class="by-line by-line--we">We make the widgets.</p>
       </div>
     </div>
+    <div class="hero-carousel__cell">
+      <div class="hero-carousel__cell__content__cell--5">
+        <p class="by-line by-line--made">Made by <b>Metafizzy</b>.</p>
+        <p class="by-line by-line--you hidden-small">You make the things that matter.</p>
+        <p class="by-line by-line--we">We make the widgets.</p>
+      </div>
+    </div>
+    
   </div>
       
 
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/flickity-docs.min.js"></script>
+      <script>
+        
+        $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});    
+    </script>
 	
   </body>
 </html>

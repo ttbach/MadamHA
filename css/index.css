@@ -4,24 +4,23 @@
     height: 100vh;
     width: auto\9; /* ie8 */ 
     position: relative;
+    opacity: 0.4;
 }
 
 
 #cheese p{
     position: absolute; 
-    top: 40%; 
+    color: hsl(33, 84%, 48%)!important;
+    top: 35%; 
     left: 0; 
     width: 100%; 
     text-align: center;
     color: white; 
     font: bold 24px/45px Helvetica, Sans-Serif; 
-    font-size: 20px;
-/*
+    font-size: 40px;
     letter-spacing: -1px;  
-    background: rgb(0, 0, 0);  fallback color 
-    background: rgba(0, 0, 0, 0.7);
+/*    background: rgba(180, 137, 169, 0.7);*/
     padding: 10px; 
-*/
 }
 
 
@@ -30,6 +29,69 @@
     margin-top: 25%;
     text-align: center;
 }
+
+
+/* the wrapper element that will become the outer circle */
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+  top: -60em;
+  margin-left:-5em;
+  background: hsl(33, 84%, 48%);
+  width: 10em;
+  height: 10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size: 0.3em;
+  display:block;
+  box-shadow: 0px 0px 5px 0px rgba(255, 102, 51, 0.64);
+}
+
+/* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
+.arrow {
+  float:left;
+  position:relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent;
+  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+}
+
+/* a pseudo element arrow placed on top of the other one with the same color as the wrapper */
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #F5F6F7 transparent transparent transparent;
+  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+}
+
+@-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
+  }
+  
+  .arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 3s;
+  }
 
 
 
