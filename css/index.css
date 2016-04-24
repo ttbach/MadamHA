@@ -32,7 +32,7 @@
 
 
 /* the wrapper element that will become the outer circle */
-.arrow-wrap {
+.arw-wrap {
   position:absolute;
   z-index:1;
   left:50%;
@@ -49,7 +49,7 @@
 }
 
 /* a triangle to make the main part of the arrow. Adjust the border-color to fit your needs */
-.arrow {
+.arw {
   float:left;
   position:relative;
   width: 0px;
@@ -61,7 +61,7 @@
 }
 
 /* a pseudo element arrow placed on top of the other one with the same color as the wrapper */
-.arrow:after {
+.arw:after {
   content:'';
   position:absolute;
   top:-3.2em;
@@ -88,7 +88,7 @@
     100% { top:0; }
   }
   
-  .arrow-wrap .arrow {
+  .arw-wrap .arw {
     -webkit-animation: arrows 2.8s 0.4s;
     -webkit-animation-delay: 3s;
   }
