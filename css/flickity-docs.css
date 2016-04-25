@@ -1662,8 +1662,7 @@ td.event-table__time {
   width: 100%;
   height: 240px;
   color: white;
-  background: #ED2;
-  background: #EFCE36; /* match gif */
+  background: #DBD565;
 }
 
 .hero-carousel__cell__content {
@@ -1823,9 +1822,11 @@ td.event-table__time {
 
 @media screen and ( min-width: 960px ) {
 
+/*
   .hero-carousel__cell--1  .hero-carousel__cell__content {
     padding-right: 400px;
   }
+*/
 
   .hero-carousel h1 {
     font-size: 7.8em;

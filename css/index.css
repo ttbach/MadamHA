@@ -97,6 +97,7 @@
   }
 
 /* More hero carousel*/
+
 .hero-carousel__cell--5 {
   background: #4FC7C7 !important;
 }
@@ -106,14 +107,7 @@
 }
 
 .hero-carousel__cell--6 h2 {
-    max-width: 80%;
-    font-size: 20px;
-    margin-left: 8%;
-}
-
-.hero-carousel__cell--6 p {
-    max-width: 80%;
-    margin-left: 8%;
+    font-size: 24px;
 }
 
 .hero-carousel__cell--7 {
