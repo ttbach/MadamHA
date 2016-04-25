@@ -96,5 +96,23 @@
     -webkit-animation-delay: 3s;
   }
 
+/* More hero carousel*/
+.hero-carousel__cell--5 {
+  background: #4FC7C7 !important;
+}
 
+.hero-carousel__cell--6 {
+  background: #4FC7C7 !important;
+}
+
+.hero-carousel__cell--7 {
+  background: #4FC7C7 !important;
+}
+
+
+/*
+.hero-carousel__cell--6{
+  background: #AF4FC7 !important;  
+}
+*/
 
