@@ -4,7 +4,6 @@
     height: 100vh;
     width: auto\9; /* ie8 */ 
     position: relative;
-/*    opacity: 0.4;*/
 }
 
 #cheese p{
@@ -13,7 +12,6 @@
     margin-left: 5%;
     position: absolute; 
     max-width: 90%;
-/*    color: B40486!important;*/
     top: 25%; 
     left: 0; 
     width: 100%; 
@@ -22,7 +20,6 @@
     font: bold 24px/45px Helvetica, Sans-Serif; 
     font-size: 40px;
     letter-spacing: -1px;  
-/*    background: rgba(180, 137, 169, 0.7);*/
     padding: 10px; 
 }
 
@@ -95,6 +92,10 @@
     -webkit-animation: arrows 2.8s 0.4s;
     -webkit-animation-delay: 3s;
   }
+
+#content{
+    font-family: 'Cambo', serif; !important;
+}
 
 /* More hero carousel*/
 
