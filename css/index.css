@@ -4,6 +4,10 @@
     height: 100vh;
     width: auto\9; /* ie8 */ 
     position: relative;
+    /* 
+    To make image not stretch, see here"
+    https://css-tricks.com/how-to-resizeable-background-image/
+    */
 }
 
 #cheese p{
