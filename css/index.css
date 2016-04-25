@@ -9,16 +9,15 @@
 #cheese p{
     font-family: 'Lora', serif !important;
     text-align: center;
-    margin-left: 5%;
     position: absolute; 
-    max-width: 90%;
+    max-width: 80%;
     top: 25%; 
-    left: 0; 
+    left: 10%; 
     width: 100%; 
     text-align: center;
     color: white; 
     font: bold 24px/45px Helvetica, Sans-Serif; 
-    font-size: 40px;
+    font-size: 45px;
     letter-spacing: -1px;  
     padding: 10px; 
 }
