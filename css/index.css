@@ -10,6 +10,16 @@
     */
 }
 
+#cheese{
+    background: url(../cheese.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+}
+
 #cheese p{
     font-family: 'Lora', serif !important;
     text-align: center;
@@ -33,14 +43,20 @@
     text-align: center;
 }
 
+section{
+    margin-left: 50%;
+    margin-top: 10%;
+}
 
 /* the wrapper element that will become the outer circle */
 .arw-wrap {
-  position:relative;
+/*  position:relative;*/
   z-index:1;
+/*
   left:50%;
   top: -30em;
   margin-left:-5em;
+*/
   background: white;
   width: 10em;
   height: 10em;
@@ -98,6 +114,7 @@
 
 #content{
     font-family: 'Cambo', serif; !important;
+    top: 10px;
 }
 
 /* More hero carousel*/
