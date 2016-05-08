@@ -3,15 +3,11 @@
     height: 100vh;
     width: auto\9; /* ie8 */ 
     position: relative;
-    /* 
-    To make image not stretch, see here"
-    https://css-tricks.com/how-to-resizeable-background-image/
-    */
 }
 
 #cheese{
     z-index: 1;
-    background-image: url(../cheese.jpg);
+    background-image: url(../img/cheese-gray.jpg);
     height: 100vh;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -51,11 +47,6 @@
 
 /* the wrapper element that will become the outer circle */
 .arw-wrap {
-    /*  position:fixed;*/
-/*    z-index:1;*/
-    /*  left:50%;*/
-    /*  top: -30em;*/
-    /*  margin-left:-5em;*/
     margin-left: 49%;
     background: white;
     width: 10em;
@@ -177,7 +168,11 @@
   background: #8ECD89 !important;
 }
 
-
-
-
+#class{
+    background-image: url(../img/class.jpg);
+    height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
 
